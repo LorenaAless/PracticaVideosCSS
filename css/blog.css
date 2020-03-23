@@ -1,0 +1,18 @@
+#blog h2, h3{
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;/*cada articulo sea una caja flexible*/
+    justify-content: center;/*imágenes en una sola linea*/
+    flex-wrap: wrap;/*para que los elementos que no quepan se bajen*/
+}
+
+#blog article{
+    margin: 15px;
+}
+
+#blog img{
+    width: 100%;
+    max-width: 280px;
+}

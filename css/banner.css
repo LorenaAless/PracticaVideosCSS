@@ -1,0 +1,69 @@
+#banner{
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: orange;/*color del texto dentro de la imagen del banner*/
+    text-align: left;
+}
+
+#banner h2{
+    font-size: 30px;
+}
+
+#banner p{
+    font-size: 20px;  
+}
+
+#banner a{/*boton de Leer más*/
+    width: 100px;
+    display: inline-block;
+    color: orange;/*color del Leer más*/
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border: 3px solid orange;
+}
+
+#banner a:hover{
+    background: #d4f8e8;/*fondo del Leer más*/
+}
+
+@media (min-width:480px){
+    #banner h2{
+        font-size: 40px;
+    }
+
+    banner a{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:768px){
+    #banner{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    #banner img{
+        height: auto;
+        margin-top: -200px;
+    }
+}
+
+@media (min-width:1024px){
+    #banner img{
+        margin-top: -200px;
+    }
+}
